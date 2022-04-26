@@ -14,22 +14,21 @@
           <h4 class="card-title">KASR LLC</h4>
           <h6 class="card-text mb-4">Welcome to KASR LLC Customer Portal</h6>
           
-          <form class="mt-4" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-            <input type=hidden name="oid" value="00D7Q000005YoFy">
+          <form class="mt-4" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+           
+            <input type=hidden name="orgid" value="00D7Q000005YoFy">
             <input type=hidden name="retURL" value="https://klcysn.github.io/Salesforce-Lead/returnPage">
 
-            <div class="mb-3">
-              <label for="first_name" class="form-label">First Name</label>
-              <input maxlength="40" name="first_name" type="text" class="form-control" id="first_name">
+            <div class="mb-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" maxlength="80" name="subject">
             </div>
-            <div class="mb-3">
-              <label for="last_name" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="last_name" maxlength="80" name="last_name">
+
+            <div class="form-floating mb-4">
+                <textarea class="form-control" placeholder="Please write description here..." id="description" name="description"></textarea>
+                <label for="description">Description</label>
             </div>
-            <div class="mb-3">
-              <label for="city" class="form-label">City</label>
-              <input type="text" class="form-control" id="city" maxlength="40" name="city">
-            </div>
+            
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" class="form-control" id="email" maxlength="80" name="email" aria-describedby="emailHelp">
